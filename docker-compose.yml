@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  backend:
+    build: .
+    container_name: go_te_backend
+    volumes:
+      - .:/go/src
+    ports:
+      - 8089:8089
+    expose:
+        - 8089
